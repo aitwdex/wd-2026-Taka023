@@ -14,9 +14,10 @@
     <h1 class="text-center">リアルタイムの天気</h1>
     <h4>このサイトでは名古屋、東京、大阪、静岡の日本の4箇所のリアルタイムの天気を検索できます</h4>
 
-    <div class="mb-3 flex-column align-items-center">
+    <div class="mb-3 d-flex flex-column align-items-center w-100">
       <label for="citySelect" class="form-label">都市を選択してください</label>
-      <select id="citySelect" class="form-select text-center" style="width: 20rem;">
+      
+      <select id="citySelect" class="form-select text-center" style="max-width: 320px; width: 100%;">
         <option value="35.18,136.91">名古屋</option>
         <option value="35.68,139.76">東京</option>
         <option value="34.69,135.50">大阪</option>
@@ -26,12 +27,14 @@
 
     <button id="getBtn" class="btn btn-primary text-center">天気を取得</button>
 
-    <div id="result" class="card mt-3 " style="width: 20rem;">
+   
+    <div id="result" class="card mt-3" style="max-width: 320px; width: 100%;">
       <div class="card-body">
         <p id="temp" class="card-text">都市を選んでボタンを押してください</p>
       </div>
     </div>
-  </div>
+
+    
 
   
 <footer class="text-center">
